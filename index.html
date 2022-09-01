@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <img id="anh"
+         src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-running-girl-png-image_4729158.jpg "
+         width="200px" height="250px" alt="">
+    <br>
+    <button onclick="khiBamNutTrai()">Bên trái</button>
+    <button onclick="khiBamNutPhai()">Bên phải</button>
+<script>
+    let diChuyenAnh ;
+    function init() {
+        diChuyenAnh = document.getElementById('anh');
+        diChuyenAnh.style.position = 'relative';
+        diChuyenAnh.style.left = '0px';
+    }
+
+    function khiBamNutTrai() {
+        diChuyenAnh.style.left = parseInt(diChuyenAnh.style.left) - 100 + 'px';
+    }
+
+    function khiBamNutPhai() {
+        diChuyenAnh.style.left = parseInt(diChuyenAnh.style.left) + 100 + 'px';
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>
