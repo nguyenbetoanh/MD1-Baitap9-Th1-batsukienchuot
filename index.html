@@ -12,11 +12,10 @@
     <button onclick="khiBamNutTrai()">Bên trái</button>
     <button onclick="khiBamNutPhai()">Bên phải</button>
 <script>
-    let diChuyenAnh ;
+    let diChuyenAnh = document.getElementById('anh');
     function init() {
-        diChuyenAnh = document.getElementById('anh');
         diChuyenAnh.style.position = 'relative';
-        diChuyenAnh.style.left = '0px';
+        diChuyenAnh.style.left= '0px';
     }
 
     function khiBamNutTrai() {
